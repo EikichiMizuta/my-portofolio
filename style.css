@@ -1,0 +1,63 @@
+body {
+  background: url("./images/renga.png");
+}
+
+.uni-and-hobby {
+  float: left;
+}
+
+#radio {
+  width: 400px;
+  height: 250px;
+}
+
+#skill {
+  width: 400px;
+  height: 250px;
+}
+
+#univ {
+  width: 400px;
+  height: 250px;
+}
+
+#quiz {
+  width: 400px;
+  height: 250px;
+}
+
+.university-container {
+  border: 3px solid blueviolet;
+}
+
+.skill-container {
+  border: 3px solid green;
+}
+
+.hobby-container {
+  border: 3px solid yellow;
+}
+
+.quiz-container {
+  border: 3px solid red;
+}
+
+.university-header {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.quiz-header {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.hobby-header {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.skill-header {
+  font-size: 50px;
+  font-weight: bold;
+}

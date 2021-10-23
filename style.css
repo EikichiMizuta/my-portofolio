@@ -5,6 +5,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.header {
+  font-size: 6vmin;
+}
+
 .header-list {
   font-size: 3vmin;
 }
@@ -26,20 +30,6 @@ html {
   align-items: center;
 }
 
-#univ-sentence {
-  font-size: 3vmin;
-}
-#hobby-sentence {
-  font-size: 3vmin;
-}
-#skill-sentence {
-  font-size: 3vmin;
-}
-
-.content {
-  display: flex;
-}
-
 .container {
   width: 80%;
   border-radius: 20px;
@@ -48,8 +38,27 @@ html {
   margin: 50px;
 }
 
-.header {
+.content {
+  display: flex;
+}
+
+.head {
   font-size: 6vmin;
+}
+
+.line {
+  margin-top: 10px;
+  border-top: 1px solid black;
+}
+
+#univ-sentence {
+  font-size: 3vmin;
+}
+#hobby-sentence {
+  font-size: 3vmin;
+}
+#skill-sentence {
+  font-size: 3vmin;
 }
 
 #hob-line {
@@ -64,26 +73,14 @@ html {
 #quiz-line {
   background-color: #ddffdd;
 }
-.line {
-  margin-top: 10px;
-  border-top: 1px solid black;
-}
 
-.univ-img {
+.img {
   width: 50%;
   height: auto;
 }
 
-#hobby-img {
-  width: 50%;
-  height: auto;
-}
-#skill-img {
-  width: 50%;
-  height: auto;
-}
 #quiz-img {
-  width: 70%;
+  width: 100%;
   height: auto;
 }
 
@@ -93,8 +90,5 @@ html {
 .choice {
   flex-direction: column;
   display: flex;
-}
-
-.choice {
   width: 100%;
 }

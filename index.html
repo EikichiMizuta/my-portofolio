@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>水田のDocument</title>
   </head>
   <body>
     <header>
-      <div class="header">Portfolio</div>
-      <a href="#univ-line"class="header-list">大学</a>
-      <a href="#hob-line"class="header-list">趣味</a>
-      <a href="#skill-line"class="header-list">特技</a>
-      <a href="#quiz-line"class="header-list">クイズ</a>
+      <div class="header">
+        <div>Portfolio</div>
+        <a href="#univ-line"class="header-list">大学</a>
+        <a href="#hob-line"class="header-list">趣味</a>
+        <a href="#skill-line"class="header-list">特技</a>
+        <a href="#quiz-line"class="header-list">クイズ</a>
+      </div>
     </header>
     <div id="name-container">
       <div id="name-japanese">水田 瑛吉</div>
@@ -21,10 +23,10 @@
     </div>
     <div class="my-list">
       <div class="container">
-        <div class="header" id="univ-line">大学</div>
+        <div class="head" id="univ-line">大学</div>
         <div class ="line">　</div>
         <div class="content">
-          <img src="./images/aogaku.png" class="univ-img"></img>
+          <img src="./images/aogaku.png" class="img"></img>
           <div>
             <div id="univ-sentence">青山学院大学</div>
             <ul>
@@ -35,10 +37,10 @@
         </div>
       </div>
       <div class="container">
-        <div class="header" id="hob-line">趣味</div>
+        <div class="head" id="hob-line">趣味</div>
         <div class ="line">　</div>
         <div class="content">
-          <img src="./images/radio.png"  id="hobby-img"></img>
+          <img src="./images/radio.png" class="img"></img>
           <div>
             <div id="hobby-sentence">ラジオ</div>
             <ul>
@@ -50,10 +52,10 @@
         </div>
       </div>
       <div class="container">
-        <div class="header" id="skill-line">特技</div>
+        <div class="head" id="skill-line">特技</div>
         <div class ="line">　</div>
         <div class="content">
-          <img src="./images/ski.jpg" id="skill-img"></img>
+          <img src="./images/ski.jpg" class="img"></img>
           <div>
             <div id="skill-sentence">スキー</div>
             <ul>
@@ -64,20 +66,19 @@
           </div>
         </div>
       </div>
-      <div class="container" id="quiz-container">
-        <div class="header"  id="quiz-line">Q. この人は誰でしょう</div>
+      <div class="container">
+        <div class="head"  id="quiz-line">Q. この人は誰でしょう</div>
         <div class ="line">　</div>
         <div class="content" id="quiz-content">
           <img src="./images/sakuma_quiz.png" id="quiz-img"></img>
-          <div id="quiz-container">
+          <div>
             <ol>
               <li><button id="choice1" class ="sentence">高校三年生の秋、夢をあきらめて地方就職を決めた時に「本当にそれでいいのか」と言ってくる未来の自分</button></li>
               <li><button id="choice2" class ="sentence">修学旅行の夜、消灯確認の巡回に来て明らかにスマホの灯りがばれるも、何も言わずドアを閉めてくれる担任教師</button></li>
               <li><button id="choice3" class ="sentence">追い込まれた犯人がおもむろに銃を取り出して、銃口を向けてくるも「お前に俺は殺せねえよ」と情に訴えかけてくるベテラン警官</button></li>
-              <li><button id="choice4" class ="sentence">ただの会社員だったのにオールナイトニッポンの水曜枠を担当することになった元テレビマン</button></li>
+              <li><button id="choice4" class ="sentence">ただの会社員だったのにオールナイトニッポンの水曜枠を担当することになったテレビマン</button></li>
             </ol>
           </div>
-          <div id="quiz-sentence"></div>
         </div>
         <div class ="footer" id="quiz-footer"></div>
         <div class ="footer" id="quiz-footer-image"></div>

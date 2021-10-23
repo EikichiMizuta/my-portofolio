@@ -51,16 +51,6 @@ html {
   border-top: 1px solid black;
 }
 
-#univ-sentence {
-  font-size: 3vmin;
-}
-#hobby-sentence {
-  font-size: 3vmin;
-}
-#skill-sentence {
-  font-size: 3vmin;
-}
-
 #hob-line {
   background-color: #ffdddd;
 }
@@ -81,12 +71,22 @@ html {
 
 #quiz-img {
   width: 100%;
-  height: auto;
+  height: 20vw;
 }
 
 .sentence {
   font-size: 2.5vmin;
 }
+#univ-sentence {
+  font-size: 3vmin;
+}
+#hobby-sentence {
+  font-size: 3vmin;
+}
+#skill-sentence {
+  font-size: 3vmin;
+}
+
 .choice {
   flex-direction: column;
   display: flex;

@@ -1,63 +1,100 @@
 body {
   background: url("./images/renga.png");
 }
-
-.uni-and-hobby {
-  float: left;
+html {
+  scroll-behavior: smooth;
 }
 
-#radio {
-  width: 400px;
-  height: 250px;
+.header-list {
+  font-size: 3vmin;
 }
 
-#skill {
-  width: 400px;
-  height: 250px;
+#name-container {
+  text-align: center;
+}
+#name-japanese {
+  font-size: 20vmin;
 }
 
-#univ {
-  width: 400px;
-  height: 250px;
+#name-english {
+  font-size: 5vmin;
 }
 
-#quiz {
-  width: 400px;
-  height: 250px;
+.my-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.university-container {
-  border: 3px solid blueviolet;
+#univ-sentence {
+  font-size: 3vmin;
+}
+#hobby-sentence {
+  font-size: 3vmin;
+}
+#skill-sentence {
+  font-size: 3vmin;
 }
 
-.skill-container {
-  border: 3px solid green;
+.content {
+  display: flex;
 }
 
-.hobby-container {
-  border: 3px solid yellow;
+.container {
+  width: 80%;
+  border-radius: 20px;
+  background-color: #fff8dc;
+  padding: 20px;
+  margin: 50px;
 }
 
-.quiz-container {
-  border: 3px solid red;
+.header {
+  font-size: 6vmin;
 }
 
-.university-header {
-  font-size: 50px;
-  font-weight: bold;
+#hob-line {
+  background-color: #ffdddd;
+}
+#univ-line {
+  background-color: #ddeeff;
+}
+#skill-line {
+  background-color: #e3def1;
+}
+#quiz-line {
+  background-color: #ddffdd;
+}
+.line {
+  margin-top: 10px;
+  border-top: 1px solid black;
 }
 
-.quiz-header {
-  font-size: 50px;
-  font-weight: bold;
+.univ-img {
+  width: 50%;
+  height: auto;
 }
 
-.hobby-header {
-  font-size: 50px;
-  font-weight: bold;
+#hobby-img {
+  width: 50%;
+  height: auto;
+}
+#skill-img {
+  width: 50%;
+  height: auto;
+}
+#quiz-img {
+  width: 70%;
+  height: auto;
 }
 
-.skill-header {
-  font-size: 50px;
-  font-weight: bold;
+.sentence {
+  font-size: 2.5vmin;
+}
+.choice {
+  flex-direction: column;
+  display: flex;
+}
+
+.choice {
+  width: 100%;
 }

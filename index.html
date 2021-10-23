@@ -4,54 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>水田のMy Portfolio</title>
+    <title>Document</title>
   </head>
   <body>
-    <h1>ポートフォリオサイト</h1>
+    <header>
+      <div class="header">Portfolio</div>
+      <a href="#univ-line"class="header-list">大学</a>
+      <a href="#hob-line"class="header-list">趣味</a>
+      <a href="#skill-line"class="header-list">特技</a>
+      <a href="#quiz-line"class="header-list">クイズ</a>
+    </header>
     <div id="name-container">
-      <div id="name-japanese">水田　瑛吉</div>
+      <div id="name-japanese">水田 瑛吉</div>
       <div id="name-english">MIZUTA Eikichi</div>
     </div>
     <div class="my-list">
-      <div class="uni-and-hobby">
-        <div class="university-container">
-          <div class="university-header">大学</div>
-          <div class="university-content">
-            <image src="./images/aogaku.png" id="univ"></image>
+      <div class="container">
+        <div class="header" id="univ-line">大学</div>
+        <div class ="line">　</div>
+        <div class="content">
+          <img src="./images/aogaku.png" class="univ-img"></img>
+          <div>
+            <div id="univ-sentence">青山学院大学</div>
             <ul>
-              <li class="university-sentece">青山学院大学</li>
-              <li class="university-sentece">理工学部機械創造工学科</li>
+              <li class="sentence">理工学部機械創造工学科</li>
+              <li class="sentence">相模原キャンパス</li>
             </ul>
           </div>
         </div>
-        <div class="hobby-container">
-          <div class="hobby-header">趣味</div>
-          <div class="hobby-content">
-            <image src="./images/radio.png" id="radio"></image>
-            <div id="hobby-sentece">ラジオ</div>
+      </div>
+      <div class="container">
+        <div class="header" id="hob-line">趣味</div>
+        <div class ="line">　</div>
+        <div class="content">
+          <img src="./images/radio.png"  id="hobby-img"></img>
+          <div>
+            <div id="hobby-sentence">ラジオ</div>
+            <ul>
+              <li class="sentence">テレビなどその他エンタメよりも近い距離で楽しめる！</li>
+              <li class="sentence">家事、勉強など作業中でも手軽に聴ける！</li>
+              <li class="sentence">オールナイトニッポンがおすすめ！</li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="skill-container">
-        <div class="skill-header">特技</div>
-        <div class="skill-content">
-          <image src="" id="skill"></image>
-          <div id="skill-sentece">スキー</div>
+      <div class="container">
+        <div class="header" id="skill-line">特技</div>
+        <div class ="line">　</div>
+        <div class="content">
+          <img src="./images/ski.jpg" id="skill-img"></img>
+          <div>
+            <div id="skill-sentence">スキー</div>
+            <ul>
+              <li class="sentence">元スキーサークル所属</li>
+              <li class="sentence">精度を競う基礎スキー</li>
+              <li class="sentence">山の寒さにも強くなった</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="quiz-container">
-        <div class="quiz-header">Q.　この人は誰でしょう</div>
-        <div class="quiz-content">
-          <image src="./images/sakuma_quiz.png" id="quiz"></image>
-          <div id="choices-container">
-            <button id="cho1">小手伸也</button>
-            <button id="cho1">佐久間宣行</button>
-            <button id="cho1">ガレッジセールのゴリ</button>
+      <div class="container" id="quiz-container">
+        <div class="header"  id="quiz-line">Q. この人は誰でしょう</div>
+        <div class ="line">　</div>
+        <div class="content" id="quiz-content">
+          <img src="./images/sakuma_quiz.png" id="quiz-img"></img>
+          <div id="quiz-container">
+            <ol>
+              <li><button id="choice1" class ="sentence">高校三年生の秋、夢をあきらめて地方就職を決めた時に「本当にそれでいいのか」と言ってくる未来の自分</button></li>
+              <li><button id="choice2" class ="sentence">修学旅行の夜、消灯確認の巡回に来て明らかにスマホの灯りがばれるも、何も言わずドアを閉めてくれる担任教師</button></li>
+              <li><button id="choice3" class ="sentence">追い込まれた犯人がおもむろに銃を取り出して、銃口を向けてくるも「お前に俺は殺せねえよ」と情に訴えかけてくるベテラン警官</button></li>
+              <li><button id="choice4" class ="sentence">ただの会社員だったのにオールナイトニッポンの水曜枠を担当することになった元テレビマン</button></li>
+            </ol>
           </div>
           <div id="quiz-sentence"></div>
         </div>
+        <div class ="footer" id="quiz-footer"></div>
+        <div class ="footer" id="quiz-footer-image"></div>
       </div>
     </div>
     <script src="main.js"></script>

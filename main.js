@@ -1,23 +1,27 @@
-const feedback = document.getElementById("quiz-sentence");
-const choicesContainer = document.getElementById("choices-container");
+const quizFooter = document.getElementById("quiz-footer");
+const quizFooterImage = document.getElementById("quiz-footer-image");
+const choice1 = document.getElementById("choice1");
+const choice2 = document.getElementById("choice2");
+const choice3 = document.getElementById("choice3");
+const choice4 = document.getElementById("choice4");
 
 // クイズの内容
 const quiz = {
   choices: [
     {
-      text: "小手伸也",
-      feedback: "残念！ぽっちゃり体型のコンフィデンスマンじゃないよ！",
-      img: "kote.png",
+      feedback: "残念！これを選んだあなたは数年前を振り返ってみよう！",
     },
     {
-      text: "佐久間宣行",
-      feedback: "正解！元テレ東局員のテレビプロデューサーだよ！",
-      img: "sakuma1.png",
+      feedback:
+        "残念！ばれなかったのか？て一瞬思って後で先生のやさしさに気づくよね！",
     },
     {
-      text: "ガレッジセールのゴリ",
-      feedback: "残念！女装してもゴリエちゃんにはならないよ！",
-      img: "gorie.png",
+      feedback:
+        "残念！この選択肢は作ってて恥ずかしかったよ！選んだ君は少し変わってるかも！",
+    },
+    {
+      feedback:
+        "正解！テレビ東京の局員だったのに、ゲストとしてラジオに出演する度に好評だったので自分の番組を持ってしまった人なんだ！",
     },
   ],
 };
@@ -25,16 +29,6 @@ const quiz = {
 // quiz を画面に表示する関数
 const reloadQuiz = function () {
   // 選択肢（ボタン）の中身を表示
-
-  const choice1 = document.createElement("button");
-  const choice2 = document.createElement("button");
-  const choice3 = document.createElement("button");
-
-  choice1.textContent = quiz.choices[0].text;
-  choice2.textContent = quiz.choices[1].text;
-  choice3.textContent = quiz.choices[2].text;
-
-  choicesContainer.append(choice1, choice2, choice3);
 
   choice1.onclick = function () {
     // 0 番目の選択肢を選択
@@ -48,17 +42,22 @@ const reloadQuiz = function () {
     // 2 番目の選択肢を選択
     choose(2);
   };
+  choice4.onclick = function () {
+    // 3 番目の選択肢を選択
+    choose(3);
+    const image = document.createElement("img");
+
+    image.src = "./images/sakuma1.png";
+
+    quizFooter.append(image);
+  };
 };
 
 // choiceNumber番目の選択肢を選択
 const choose = function (choiceNumber) {
   // フィードバックを表示
-  feedback.textContent = quiz.choices[choiceNumber].feedback;
-  const image = document.createElement("img");
 
-  image.src = "./images/" + quiz.choices[choiceNumber].img;
-
-  feedback.append(image);
+  quizFooter.textContent = quiz.choices[choiceNumber].feedback;
 };
 
 // reloadQuiz関数 を実行して、クイズを画面に表示する
